@@ -11,6 +11,7 @@ let make_i n i s =
 
 let tests = [
   make_i "integer" "22" "22";
+  make_i "integer" "-22" "-22";
 ]
 
 let suite = "calc test suite" >::: tests

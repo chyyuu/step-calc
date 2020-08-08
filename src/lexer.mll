@@ -8,7 +8,7 @@
 
 let white   = [' ' '\t']+
 let digit   = ['0'-'9']
-let integer = digit+
+let integer = '-'? digit+
 let letter  = ['a'-'z' 'A'-'Z' '_' ]
 
 rule read =
