@@ -1,0 +1,7 @@
+data.dat
+fig.png
+_build/
+*.byte
+*.old
+*.org
+*~

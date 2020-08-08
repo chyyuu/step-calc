@@ -1,0 +1,6 @@
+PRJ step-calc
+S src
+
+PKG ounit2
+
+B _build/src
