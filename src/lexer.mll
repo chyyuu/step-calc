@@ -14,6 +14,7 @@ let letter  = ['a'-'z' 'A'-'Z' '_' ]
 rule read =
 parse
 |white { read lexbuf }
+|"+" { ADD }
 |integer { INT (int_of_string (Lexing.lexeme lexbuf)) }
 |eof { EOF }
 |_ { raise (Syntax_error ) }

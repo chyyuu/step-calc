@@ -12,6 +12,12 @@ let make_i n i s =
 let tests = [
   make_i "integer" "22" "22";
   make_i "integer" "-22" "-22";
+  make_i "add" "22" "11+11";
+  make_i "add" "10" "11+-1";
+  make_i "add" "33" "11+11+11";
+  make_i "add" "9" "11+-1+-1";
+  make_i "add" "-3" "-4+1";
+  make_i "add" "-3" "-2+-1";
 ]
 
 let suite = "calc test suite" >::: tests
