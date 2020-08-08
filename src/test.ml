@@ -18,6 +18,9 @@ let tests = [
   make_i "add" "9" "11+-1+-1";
   make_i "add" "-3" "-4+1";
   make_i "add" "-3" "-2+-1";
+  make_i "sub" "0" "1 - 1";
+  make_i "sub" "-3" "1 - 1 - 3";
+  make_i "sub" "3" "1 - 1 - -3";
 ]
 
 let suite = "calc test suite" >::: tests

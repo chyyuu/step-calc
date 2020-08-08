@@ -15,6 +15,7 @@ rule read =
 parse
 |white { read lexbuf }
 |"+" { ADD }
+|"-" { SUBT }
 |integer { INT (int_of_string (Lexing.lexeme lexbuf)) }
 |eof { EOF }
 |_ { raise (Syntax_error ) }

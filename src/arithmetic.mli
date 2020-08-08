@@ -19,6 +19,10 @@ module type Arithmetic_Funcs = sig
   (** [add s] is the result of adding the first element of [s] to the
       second element of [s]. *)
   val add : value list -> value
+
+  (** [subtract s] is the result of subtracting the first element of [s]
+      from the second element of [s]. *)
+  val subtract : value list -> value
 end
 
 (** A module that implements all the function values defined in module type 
