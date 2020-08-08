@@ -16,9 +16,6 @@ module Imports = struct
       all the modules used *)
   let operation_list = List.append cfu_list [] |> List.flatten
 
-  (** [functions_map] is the environment created containing all external 
-      functions of CAMLCALC *)
-
   let find_function (identifier : string) =
     match List.assoc_opt identifier operation_list with
     |Some f -> f

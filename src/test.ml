@@ -21,6 +21,11 @@ let tests = [
   make_i "sub" "0" "1 - 1";
   make_i "sub" "-3" "1 - 1 - 3";
   make_i "sub" "3" "1 - 1 - -3";
+  make_i "mul" "3" "1*3";
+  make_i "mul" "-6" "2*-3";
+  make_i "div" "4" "6/3*2";
+  make_i "equ" "1" "2==2";
+  make_i "equ" "0" "1==2";
 ]
 
 let suite = "calc test suite" >::: tests

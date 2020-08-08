@@ -23,6 +23,18 @@ module type Arithmetic_Funcs = sig
   (** [subtract s] is the result of subtracting the first element of [s]
       from the second element of [s]. *)
   val subtract : value list -> value
+
+  (** [multiply s] is the result of multiplying the first element of [s]
+      by the second element of [s]. *)
+  val multiply : value list -> value
+
+  (** [divide s] is the result of dividing the first element of [s] by 
+      the second element of [s]. *)
+  val divide : value list -> value
+
+  (** [equal_to s] is the result of comparing the first element of [s] to the 
+      second element of [s] for equality *)
+  val equal_to : value list -> value
 end
 
 (** A module that implements all the function values defined in module type 
